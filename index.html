@@ -1,0 +1,992 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MARVEL</title>
+  <!-- BOOTSTRAP CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
+  <!-- CSS -->
+  <link rel="stylesheet" href="index.css" />
+  <!-- JQUERY -->
+  <script type="text/javascript" src="jquery-3.6.4.min.js"></script>
+  <!-- ICONO -->
+  <link rel="icon" type="image/x-icon" href="IMG/m.ico" />
+  <!-- SWIPER JS CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/swiper@9.1.0/swiper-bundle.min.css" rel="stylesheet" />
+  <!-- FONT AWESOME -->
+  <script src="https://kit.fontawesome.com/dc94cdf766.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+
+  <header class="header">
+    <nav class="navbar navbar-expand-lg bg-#ed1d24; navbar-light">
+      <!-- LOGO MARVEL -->
+      <a class="navbar-brand" href="#"><img src="IMG/logo.webp" alt="Logo" /></a>
+      <!-- BOTON HAMBURGESA / MENU RESPONSIVE -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#galeria">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#sobreMARVEL">Sobre MARVEL</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#personajes">Personajes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#moviesandseries">Películas y Series</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#anunciosyplataformas">Próximos Estrenos</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- SECCION GALERIA -->
+
+  <section id="galeria">
+    <div class="m-0 vh-100 row justify-content-center align-items-center">
+      <div class="container2 col-auto" id="cont-charac">
+        <img class="personajes img-fluid" id="imagen" src="IMG/brujaescarlata.webp" onclick="cambiar()" />
+        <img class="personajes img-fluid" id="imagen" src="IMG/buckybarners.webp" onclick="cambiar()" />
+        <img class="personajes img-fluid" id="imagen" src="IMG/capitanamarvel.webp" onclick="cambiar()" />
+        <img class="personajes img-fluid" id="imagen" src="IMG/capitanamerica.webp" onclick="cambiar()" />
+        <img class="personajes img-fluid" id="imagen" src="IMG/doctorstrangegaleria.webp" onclick="cambiar()" />
+        <img class="personajes img-fluid" id="imagen" src="IMG/draxgaleria.webp" onclick="cambiar()" />
+        <img class="personajes img-fluid" id="imagen" src="IMG/falcon.webp" onclick="cambiar()" />
+        <img class="personajes img-fluid" id="imagen" src="IMG/gamoragaleria.webp" onclick="cambiar()" />
+        <img class="personajes img-fluid" id="imagen" src="IMG/grootyrocketgaleria.webp" onclick="cambiar()" />
+        <img class="personajes img-fluid" id="imagen" src="IMG/hawkeye.webp" onclick="cambiar()" />
+        <img class="personajes img-fluid" id="imagen" src="IMG/viudanegra.webp" onclick="cambiar()" />
+        <img class="personajes img-fluid" id="imagen" src="IMG/hulk.webp" onclick="cambiar()" />
+        <img class="personajes img-fluid" id="imagen" src="IMG/ironmangaleria.webp" onclick="cambiar()" />
+        <img class="personajes img-fluid" id="imagen" src="IMG/nebula.webp" onclick="cambiar()" />
+        <img class="personajes img-fluid" id="imagen" src="IMG/okoyegaleria.webp" onclick="cambiar()" />
+        <img class="personajes img-fluid" id="imagen" src="IMG/panteranegragaleria.webp" onclick="cambiar()" />
+        <img class="personajes img-fluid" id="imagen" src="IMG/spiderman(tom).webp" onclick="cambiar()" />
+        <img class="personajes img-fluid" id="imagen" src="IMG/thorgaleria.webp" onclick="cambiar()" />
+        <img class="personajes img-fluid" id="imagen" src="IMG/vision.webp" onclick="cambiar()" />
+        <img class="personajes img-fluid" id="imagen" src="IMG/wong.webp" onclick="cambiar()" />
+        <img class="personajes img-fluid" id="imagen" src="IMG/nick.webp" onclick="cambiar()" />
+        <img class="personajes img-fluid" id="imagen" src="IMG/antmangaleria.webp" onclick="cambiar()" />
+        <img class="personajes img-fluid" id="imagen" src="IMG/starlord.webp" onclick="cambiar()" />
+        <img class="personajes img-fluid" id="imagen" src="IMG/mantisgaleria.webp" onclick="cambiar()" />
+      </div>
+    </div>
+  </section>
+
+  <!-- SECCION ABOUT MARVEL -->
+
+  <section id="sobreMARVEL">
+    <div class="container">
+      <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
+        <img src="IMG/martingoodman.webp" class="img-fluid" alt="Martin Goodman, fundador de MARVEL" />
+      </div>
+      <div class="texto col-sm-12 col-md-6 col-lg-6 col-xl-6">
+        <h2>¿Qué es MARVEL?</h2>
+        <p class="text-justify">
+          Marvel es una empresa estadounidense de entretenimiento que se
+          dedica a la creación de cómics, películas, series de televisión y
+          otros medios relacionados con personajes de superhéroes y villanos.
+          La compañía fue fundada en 1939 como Timely Publications y, desde
+          entonces, ha sido una de las empresas más exitosas en la industria
+          del entretenimiento. Marvel es conocida por crear algunos de los
+          personajes más icónicos y populares de la cultura popular, como
+          Spider-Man, los X-Men, los Vengadores y muchos otros.
+          <br /><br />
+          La mayoría de los personajes de Marvel fueron creados por Stan Lee,
+          un escritor, editor y publicista que se convirtió en una figura
+          clave en la industria del cómic en la década de 1960. Lee trabajó en
+          estrecha colaboración con artistas como Jack Kirby, Steve Ditko y
+          John Romita para crear personajes con poderes extraordinarios,
+          problemas cotidianos y personalidades complejas. Lee también es
+          conocido por su papel en la promoción de Marvel y en la creación del
+          Universo Marvel, un universo compartido en el que los personajes y
+          las historias se entrelazan y afectan mutuamente.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECCION PERSONAJES -->
+
+  <section id="personajes">
+    <div class="center">
+      <div class="slide-container swiper">
+        <div class="card-wrapper swiper-wrapper">
+          <div class="card text-bg-dark swiper-slide">
+            <div class="card-image">
+              <img src="IMG/capitanamerica.webp" id="ca" class="card-img" alt="Capitán América" />
+              <div class="card-img-overlay">
+                <h5 class="card-title">Capitán América / Chris Evans</h5>
+                <p>
+                  El Capitán América es un superhéroe de los cómics de Marvel
+                  creado en 1941. Su verdadero nombre es Steve Rogers, un
+                  joven débil y enfermizo que se somete a un experimento
+                  militar secreto que lo transforma en un súper soldado con
+                  fuerza sobrehumana. Como Capitán América, lucha por la
+                  justicia y la libertad en su país y en todo el mundo, con su
+                  escudo indestructible como su principal arma.
+                  <br />
+                  <br />
+                  El Capitán América es considerado uno de los personajes más
+                  icónicos de Marvel y es admirado por su sentido del deber y
+                  valentía. Ha enfrentado desafíos personales y ha luchado con
+                  temas como la identidad, la lealtad y el sacrificio en su
+                  búsqueda por hacer del mundo un lugar mejor.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="card text-bg-dark swiper-slide">
+            <div class="card-image">
+              <img src="IMG/brujaescarlata.webp" id="be" class="card-img" alt="Bruja Escarlata" />
+              <div class="card-img-overlay">
+                <h5 class="card-title">Bruja Escarlata / Elizabeth Olsen</h5>
+                <p>
+                  La Bruja Escarlata, también conocida como Wanda Maximoff, es
+                  un personaje ficticio de Marvel Comics. Es uno de los
+                  miembros fundadores de los Avengers y ha sido parte
+                  importante del universo de Marvel por décadas. Wanda posee
+                  la habilidad de manipular la realidad a través de su control
+                  sobre la magia del caos, lo que la convierte en una de las
+                  superheroínas más poderosas del universo Marvel.
+                  <br />
+                  <br />
+                  La historia de Wanda se ha desarrollado a lo largo de varias
+                  series de cómics y adaptaciones a la pantalla, incluyendo la
+                  saga de los Avengers y su propia serie de televisión en
+                  Disney+. A lo largo de su historia, Wanda ha luchado con
+                  problemas de identidad, relaciones complicadas y su propia
+                  inestabilidad emocional, lo que la convierte en un personaje
+                  complejo y fascinante del universo Marvel.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="card text-bg-dark swiper-slide">
+            <div class="card-image">
+              <img src="IMG/viudanegra.webp" id="vn" class="card-img" alt="Viuda Negra" />
+              <div class="card-img-overlay">
+                <h5 class="card-title">Viuda Negra / Scarlett Johansson</h5>
+                <p>
+                  La Viuda Negra, también conocida como Natasha Romanoff, es
+                  un personaje ficticio de Marvel Comics. Es una espía y
+                  asesina entrenada en la antigua Unión Soviética y ha sido
+                  parte de los Avengers y otros equipos de superhéroes en el
+                  universo Marvel. Natasha es conocida por su habilidad en
+                  artes marciales, su destreza en el espionaje y su
+                  experiencia en operaciones encubiertas.
+                  <br />
+                  <br />
+                  La historia de la Viuda Negra se ha desarrollado a lo largo
+                  de varias series de cómics y adaptaciones a la pantalla,
+                  incluyendo las películas del Universo Cinematográfico de
+                  Marvel. A lo largo de su historia, Natasha ha luchado contra
+                  sus propios demonios internos y ha tenido que enfrentar su
+                  pasado oscuro como espía rusa. A pesar de sus habilidades
+                  letales, la Viuda Negra es un personaje complejo que ha sido
+                  retratado con un enfoque en su humanidad y vulnerabilidad.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="card text-bg-dark swiper-slide">
+            <div class="card-image">
+              <img src="IMG/capitanamarvelcarrusel.webp" id="cm" class="card-img" alt="Capitana Marvel" />
+              <div class="card-img-overlay">
+                <h5 class="card-title">Capitana Marvel / Brie Larson</h5>
+                <p>
+                  Capitana Marvel, también conocida como Carol Danvers, es un
+                  personaje ficticio de Marvel Comics. Es una superheroína con
+                  habilidades sobrehumanas, incluyendo la fuerza, velocidad,
+                  resistencia, vuelo y la capacidad de absorber y manipular la
+                  energía. Carol ha sido parte de los Avengers y otros equipos
+                  de superhéroes en el universo Marvel.
+                  <br />
+                  <br />
+                  La historia de la Capitana Marvel se ha desarrollado a lo
+                  largo de varias series de cómics y adaptaciones a la
+                  pantalla, incluyendo su propia película en el Universo
+                  Cinematográfico de Marvel. Carol ha luchado contra villanos
+                  poderosos y ha enfrentado problemas personales y emocionales
+                  a lo largo de su historia, lo que la convierte en un
+                  personaje complejo y multidimensional. Como Capitana Marvel,
+                  es un símbolo de fortaleza, valentía y determinación, y ha
+                  demostrado ser una líder efectiva en el campo de batalla.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="card text-bg-dark swiper-slide">
+            <div class="card-image">
+              <img src="IMG/doctorstrange.webp" id="ds" class="card-img" alt="Doctor Strange" />
+              <div class="card-img-overlay">
+                <h5 class="card-title">Doctor Strange / Benedict Cumberbatch</h5>
+                <p>
+                  Doctor Strange, también conocido como Stephen Strange, es un
+                  personaje ficticio de Marvel Comics. Es un hechicero y
+                  maestro de las artes místicas que protege la realidad de
+                  amenazas sobrenaturales y dimensionales. Stephen es un
+                  cirujano talentoso que pierde el uso de sus manos en un
+                  accidente y busca una cura desesperada en Nepal. Allí, se
+                  convierte en discípulo del Anciano, quien lo entrena en las
+                  artes místicas para convertirse en el Hechicero Supremo.
+                  <br />
+                  <br />
+                  La historia del Doctor Strange se ha desarrollado a lo largo
+                  de varias series de cómics y adaptaciones a la pantalla,
+                  incluyendo su propia película en el Universo Cinematográfico
+                  de Marvel. Stephen ha enfrentado villanos poderosos,
+                  incluyendo a Dormammu y a Baron Mordo, y ha defendido la
+                  realidad de amenazas sobrenaturales. Como Hechicero Supremo,
+                  es un personaje fascinante y misterioso que posee un
+                  conocimiento profundo de los misterios del universo y los
+                  poderes de la magia.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="card text-bg-dark swiper-slide">
+            <div class="card-image">
+              <img src="IMG/ironman.webp" id="im" class="card-img" alt="Iron Man" />
+              <div class="card-img-overlay">
+                <h5 class="card-title">Iron Man / Robert Downey Jr.</h5>
+                <p>
+                  Iron Man, también conocido como Tony Stark, es un personaje
+                  ficticio de Marvel Comics. Es un multimillonario empresario,
+                  inventor y filántropo que desarrolla una armadura
+                  tecnológica para convertirse en un superhéroe. Tony es
+                  conocido por su inteligencia, ingenio y habilidades como
+                  ingeniero y mecánico, lo que le permite diseñar y construir
+                  tecnología avanzada, incluyendo su propia armadura Iron Man.
+                  <br /><br />
+                  La historia de Iron Man se ha desarrollado a lo largo de
+                  varias series de cómics y adaptaciones a la pantalla,
+                  incluyendo las películas del Universo Cinematográfico de
+                  Marvel. Tony ha enfrentado amenazas poderosas, incluyendo a
+                  su propio enemigo de la empresa, Obadiah Stane, y a villanos
+                  sobrenaturales, como el Mandarin. A pesar de su arrogancia y
+                  su reputación como playboy multimillonario, Tony es un
+                  personaje complejo que ha enfrentado problemas personales y
+                  emocionales.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="card text-bg-dark swiper-slide">
+            <div class="card-image">
+              <img src="IMG/nebula.webp" id="n" class="card-img" alt="Nebula" />
+              <div class="card-img-overlay">
+                <h5 class="card-title">Nebula / Karen Gillan</h5>
+                <p>
+                  Nebula es un personaje ficticio de Marvel Comics y ha
+                  aparecido en varias adaptaciones de cómics, incluyendo el
+                  Universo Cinematográfico de Marvel. Es conocida por ser la
+                  hija adoptiva del villano Thanos y por ser una luchadora
+                  experta y estratega en combate.
+                  <br />
+                  <br />
+                  En el Universo Cinematográfico de Marvel, Nebula es
+                  interpretada por Karen Gillan y se presenta como una villana
+                  en las películas Guardianes de la Galaxia (2014) y
+                  Guardianes de la Galaxia Vol. 2 (2017). Sin embargo, en
+                  Avengers: Infinity War (2018) y Avengers: Endgame (2019),
+                  Nebula cambia de bando y se une a los Vengadores para luchar
+                  contra su propio padre, Thanos. Nebula tiene una historia de
+                  dolor y sufrimiento, ya que ha sido modificada
+                  cibernéticamente por Thanos y ha sufrido abuso y
+                  manipulación por parte de él. A pesar de esto, Nebula es un
+                  personaje fuerte y decidido que utiliza su conocimiento del
+                  universo y su habilidad en el combate para ayudar a salvar
+                  al mundo.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="card text-bg-dark swiper-slide">
+            <div class="card-image">
+              <img src="IMG/nickcarrsuel.webp" id="nf" class="card-img" alt="Nick Fury" />
+              <div class="card-img-overlay">
+                <h5 class="card-title">Nick Fury / Samuel L. Jackson</h5>
+                <p>
+                  Nick Fury es un personaje ficticio de Marvel Comics,
+                  conocido por ser el director de la agencia de espionaje y
+                  seguridad internacional S.H.I.E.L.D. Fury ha sido retratado
+                  en varias adaptaciones de cómics, incluyendo la franquicia
+                  cinematográfica del Universo Cinematográfico de Marvel,
+                  donde ha sido interpretado por Samuel L. Jackson.
+                  <br />
+                  <br />
+                  Nick Fury es el encargado de reunir a los Vengadores, un
+                  grupo de superhéroes que se unen para proteger al mundo de
+                  las amenazas extraterrestres y sobrenaturales. Fury es un
+                  personaje astuto y bien conectado que siempre está un paso
+                  adelante de sus enemigos. Además de liderar a S.H.I.E.L.D.,
+                  Fury también ha sido fundamental en la creación y
+                  mantenimiento de la Iniciativa de los Vengadores, un
+                  programa diseñado para responder a amenazas globales. A lo
+                  largo de las películas, Fury se enfrenta a desafíos
+                  personales y profesionales, pero siempre encuentra una
+                  manera de salir adelante.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="card text-bg-dark swiper-slide">
+            <div class="card-image">
+              <img src="IMG/antmancarrusel.webp" id="am" class="card-img" alt="Ant-Man" />
+              <div class="card-img-overlay">
+                <h5 class="card-title">Ant-Man / Paul Rudd</h5>
+                <p>
+                  Ant-Man es un superhéroe de Marvel Comics que se caracteriza
+                  por tener la capacidad de reducir su tamaño a la escala de
+                  un insecto y aumentar su fuerza. El personaje fue creado por
+                  Stan Lee, Larry Lieber y Jack Kirby, y su primera aparición
+                  fue en 1962. Ant-Man ha sido interpretado en el cine por el
+                  actor Paul Rudd, quien ha protagonizado dos películas de
+                  Marvel: Ant-Man (2015) y Ant-Man and the Wasp (2018).
+                  <br />
+                  <br />
+                  El personaje original de Ant-Man es el científico Hank Pym,
+                  quien desarrolla un traje especial que le permite cambiar de
+                  tamaño. En la película, el personaje de Paul Rudd es Scott
+                  Lang, un ladrón que se convierte en el nuevo Ant-Man después
+                  de ser reclutado por Pym. A pesar de su aparente falta de
+                  poderes sobrenaturales, Ant-Man es un héroe valiente y
+                  astuto que utiliza su habilidad única para luchar contra el
+                  crimen y salvar al mundo.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="card text-bg-dark swiper-slide">
+            <div class="card-image">
+              <img src="IMG/buckybarners.webp" id="bb" class="card-img" alt="Bucky Barners" />
+              <div class="card-img-overlay">
+                <h5 class="card-title">Bucky Barners / Sebastian Stan</h5>
+                <p>
+                  Bucky Barnes es un personaje de Marvel Comics que ha
+                  aparecido en varias adaptaciones de cómics y en el Universo
+                  Cinematográfico de Marvel. Es conocido por ser el mejor
+                  amigo y compañero de batalla del Capitán América, y por su
+                  transformación en el Soldado de Invierno, un asesino
+                  controlado mentalmente por Hydra.
+                  <br />
+                  <br />
+                  En las películas del Universo Cinematográfico de Marvel,
+                  Bucky es presentado como un soldado que fue dado por muerto
+                  en la Segunda Guerra Mundial, pero que en realidad fue
+                  capturado por Hydra y sometido a experimentos que lo
+                  transformaron en el Soldado de Invierno. Después de ser
+                  liberado del control mental de Hydra, Bucky lucha junto al
+                  Capitán América y los Vengadores para proteger al mundo del
+                  mal. Aunque a menudo se siente culpable por sus acciones
+                  pasadas, Bucky intenta redimirse y proteger a sus seres
+                  queridos a toda costa.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="card text-bg-dark swiper-slide">
+            <div class="card-image">
+              <img src="IMG/draxcarrusel.webp" id="d" class="card-img" alt="Drax" />
+              <div class="card-img-overlay">
+                <h5 class="card-title">Drax / Dave Bautista</h5>
+                <p>
+                  Drax el Destructor es un personaje de Marvel Comics que ha
+                  aparecido en varias adaptaciones de cómics y en el Universo
+                  Cinematográfico de Marvel. Es miembro de los Guardianes de
+                  la Galaxia y se caracteriza por ser un guerrero alienígena
+                  impulsivo y directo.
+                  <br />
+                  <br />
+                  En las películas del Universo Cinematográfico de Marvel,
+                  Drax es presentado como un guerrero alienígena cuya familia
+                  fue asesinada por el villano Ronan el Acusador. Se une a los
+                  Guardianes de la Galaxia para ayudarlos en su lucha contra
+                  Ronan y otros villanos intergalácticos. Aunque a menudo se
+                  involucra en peleas, tiene un corazón de oro y está
+                  dispuesto a hacer cualquier cosa por proteger a sus amigos.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="card text-bg-dark swiper-slide">
+            <div class="card-image">
+              <img src="IMG/falcon.webp" id="f" class="card-img" alt="Falcon" />
+              <div class="card-img-overlay">
+                <h5 class="card-title">Falcon / Anthony Mackie</h5>
+                <p>
+                  Falcon es un personaje de Marvel Comics que ha aparecido en
+                  varias adaptaciones de cómics y en el Universo
+                  Cinematográfico de Marvel. Es conocido por ser el compañero
+                  del Capitán América y por su capacidad para volar gracias a
+                  un par de alas mecánicas.
+                  <br />
+                  <br />
+                  En las películas del Universo Cinematográfico de Marvel,
+                  Falcon es presentado como un exsoldado llamado Sam Wilson.
+                  Se convierte en el aliado y amigo cercano del Capitán
+                  América y se une a él en su lucha contra el terrorismo y la
+                  injusticia. Con el tiempo, Sam hereda el manto del Capitán
+                  América y se convierte en el primer Capitán América negro.
+                  Falcon es un personaje valiente y leal que siempre está
+                  dispuesto a arriesgar todo por lo que es correcto y por
+                  proteger a sus seres queridos.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="card text-bg-dark swiper-slide">
+            <div class="card-image">
+              <img src="IMG/gamoracarrusel.webp" id="g" class="card-img" alt="Gamora" />
+              <div class="card-img-overlay">
+                <h5 class="card-title">Gamora / Zoe Saldaña</h5>
+                <p>
+                  Gamora es un personaje de Marvel Comics que ha aparecido en
+                  varias adaptaciones de cómics y en el Universo
+                  Cinematográfico de Marvel. Es conocida por ser una de las
+                  hijas adoptivas del villano Thanos y por su papel como
+                  miembro de los Guardianes de la Galaxia.
+                  <br />
+                  <br />
+                  En las películas del Universo Cinematográfico de Marvel,
+                  Gamora es presentada como una guerrera habilidosa y letal
+                  que ha sido entrenada desde niña por Thanos. Sin embargo,
+                  después de darse cuenta de la verdadera naturaleza de su
+                  padre adoptivo, Gamora decide unirse a los Guardianes de la
+                  Galaxia para luchar contra él y proteger el universo. A lo
+                  largo de las películas, Gamora se enfrenta a varios desafíos
+                  personales y emocionales, pero siempre se mantiene fiel a
+                  sus principios y a sus amigos.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="card text-bg-dark swiper-slide">
+            <div class="card-image">
+              <img src="IMG/grootyrocketcarrusel.webp" id="gr" class="card-img" alt="Groot y Rocket" />
+              <div class="card-img-overlay">
+                <h5 class="card-title">Groot y Rocket / Kevin Michael Richardson y Trevor Devall</h5>
+                <p>
+                  Groot y Rocket son dos personajes de Marvel Comics que
+                  forman parte de los Guardianes de la Galaxia y han aparecido
+                  en varias adaptaciones de cómics y en el Universo
+                  Cinematográfico de Marvel. Groot es un extraterrestre que
+                  tiene la apariencia de un árbol y puede regenerarse a partir
+                  de ramas. Es conocido por su limitado vocabulario, ya que
+                  solo dice "Yo soy Groot". Por otro lado, Rocket es un
+                  mapache genéticamente modificado con habilidades de
+                  ingeniería y estrategia militar.
+                  <br />
+                  <br />
+                  Groot y Rocket se presentan como amigos y compañeros
+                  inseparables. Groot es el protector y guardián de Rocket, y
+                  aunque su vocabulario es limitado, su conexión con Rocket y
+                  los demás Guardianes es fuerte. Rocket, por otro lado, es un
+                  personaje astuto y valiente que utiliza su ingeniería para
+                  crear armas y dispositivos. Juntos, Groot y Rocket son una
+                  fuerza formidable que ha salvado a la galaxia en varias
+                  ocasiones.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="card text-bg-dark swiper-slide">
+            <div class="card-image">
+              <img src="IMG/hawkeyecarrusel.webp" id="H" class="card-img" alt="Hawkeye" />
+              <div class="card-img-overlay">
+                <h5 class="card-title">Hawkeye / Jeremy Renner</h5>
+                <p>
+                  Hawkeye es un personaje de Marvel Comics que ha aparecido en
+                  varias adaptaciones de cómics y en el Universo
+                  Cinematográfico de Marvel. Es conocido por su habilidad como
+                  arquero y por su papel como miembro de los Vengadores.
+                  <br />
+                  <br />
+                  En las películas del Universo Cinematográfico de Marvel,
+                  Hawkeye es presentado como un agente de S.H.I.E.L.D. y un
+                  arquero experto que lucha junto a los Vengadores para
+                  proteger al mundo del mal. A lo largo de las películas, se
+                  exploran su relación con su familia y su lucha para mantener
+                  un equilibrio entre su vida como superhéroe y su vida
+                  personal. Hawkeye es un personaje valiente y leal que
+                  arriesga todo por proteger a sus seres queridos y al mundo
+                  en el que vive.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="card text-bg-dark swiper-slide">
+            <div class="card-image">
+              <img src="IMG/hulk.webp" id="H" class="card-img" alt="Hulk" />
+              <div class="card-img-overlay">
+                <h5 class="card-title">Hulk / Mark Ruffalo</h5>
+                <p>
+                  Hulk es un personaje de Marvel Comics que ha aparecido en
+                  varias adaptaciones de cómics y en el Universo
+                  Cinematográfico de Marvel. Es conocido por ser el alter ego
+                  del científico Bruce Banner y por su increíble fuerza y
+                  habilidades de regeneración.
+                  <br />
+                  <br />
+                  En las películas del Universo Cinematográfico de Marvel,
+                  Hulk es presentado como un ser poderoso que lucha junto a
+                  los Vengadores para proteger al mundo de amenazas
+                  extraterrestres y otros peligros. Sin embargo, también se
+                  explora su lucha interna por controlar su ira y mantener su
+                  forma humana. Hulk es un personaje complejo y a menudo
+                  trágico, pero también es un héroe valiente que siempre está
+                  dispuesto a ponerse en peligro para proteger a los demás.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="card text-bg-dark swiper-slide">
+            <div class="card-image">
+              <img src="IMG/okoye.webp" id="o" class="card-img" alt="Okoye" />
+              <div class="card-img-overlay">
+                <h5 class="card-title">Okoye / Danai Gurira</h5>
+                <p>
+                  Okoye es un personaje de Marvel Comics que aparece en el
+                  Universo Cinematográfico de Marvel. Es conocida por ser la
+                  líder de la Dora Milaje, una fuerza de élite de mujeres
+                  guerreras que protege al rey de Wakanda.
+                  <br />
+                  <br />
+                  En las películas del Universo Cinematográfico de Marvel,
+                  Okoye es presentada como una guerrera implacable y leal,
+                  dispuesta a hacer cualquier cosa para proteger a su nación y
+                  a su rey. Ella es una experta en artes marciales y en el uso
+                  de armas, y ha demostrado ser una estratega astuta. Además
+                  de su papel como líder de la Dora Milaje, Okoye también es
+                  una aliada cercana de los Vengadores y ha luchado junto a
+                  ellos para proteger al mundo.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="card text-bg-dark swiper-slide">
+            <div class="card-image">
+              <img src="IMG/panteranegra.webp" id="pn" class="card-img" alt="Pantera Negra" />
+              <div class="card-img-overlay">
+                <h5 class="card-title">Pantera Negra / Chadwick Boseman</h5>
+                <p>
+                  Pantera Negra es un personaje de Marvel Comics que ha
+                  aparecido en varias adaptaciones de cómics y en el Universo
+                  Cinematográfico de Marvel. Es conocido por ser el rey de
+                  Wakanda, una nación ficticia en África que es conocida por
+                  su tecnología avanzada y su rica cultura.
+                  <br />
+                  <br />
+                  En las películas del Universo Cinematográfico de Marvel,
+                  Pantera Negra es presentado como un líder valiente y justo
+                  que lucha por proteger a su pueblo y al mundo de amenazas
+                  externas. Además de ser un guerrero formidable, Pantera
+                  Negra también es un genio tecnológico y utiliza sus
+                  habilidades para crear tecnologías avanzadas para su nación.
+                  También es un miembro importante de los Vengadores y ha
+                  luchado junto a ellos en varias misiones para proteger al
+                  mundo. Pantera Negra es un personaje icónico que representa
+                  la fuerza, la inteligencia y la determinación de un gran
+                  líder.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="card text-bg-dark swiper-slide">
+            <div class="card-image">
+              <img src="IMG/spiderman(tom).webp" id="sm" class="card-img" alt="Spider-Man" />
+              <div class="card-img-overlay">
+                <h5 class="card-title">Spider-Man / Tom Holland</h5>
+                <p>
+                  Spider-Man es un personaje de Marvel Comics que ha aparecido
+                  en varias adaptaciones de cómics y en el Universo
+                  Cinematográfico de Marvel. Es conocido por su identidad
+                  secreta como Peter Parker, un estudiante de secundaria que
+                  adquiere habilidades arácnidas después de ser picado por una
+                  araña radioactiva.
+                  <br />
+                  <br />
+                  En las películas del Universo Cinematográfico de Marvel,
+                  Spider-Man es presentado como un héroe joven y entusiasta
+                  que lucha por hacer el bien y proteger a los inocentes. A
+                  menudo se une a otros héroes del Universo Marvel, como los
+                  Vengadores, y utiliza sus habilidades sobrehumanas para
+                  combatir a villanos peligrosos como el Doctor Octopus, el
+                  Duende Verde y el Lagarto. Spider-Man es un personaje
+                  popular y amado por su inteligencia, sentido del humor y su
+                  lucha constante contra el mal.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="card text-bg-dark swiper-slide">
+            <div class="card-image">
+              <img src="IMG/thor.webp" id="t" class="card-img" alt="Thor" />
+              <div class="card-img-overlay">
+                <h5 class="card-title">Thor / Chris Hemsworth</h5>
+                <p>
+                  Thor es un personaje de Marvel Comics que ha aparecido en
+                  varias adaptaciones de cómics y en el Universo
+                  Cinematográfico de Marvel. Es conocido por ser el dios
+                  nórdico del trueno y el hijo del rey Odin.
+                  <br />
+                  <br />
+                  En las películas del Universo Cinematográfico de Marvel,
+                  Thor es presentado como un héroe poderoso y valiente que
+                  lucha por proteger a su hogar, Asgard, y al resto del
+                  universo de amenazas externas. Además de su fuerza
+                  sobrehumana y su habilidad para controlar el trueno, Thor
+                  también es un personaje complejo que experimenta cambios
+                  emocionales y evoluciona a lo largo de la saga. Se une a los
+                  Vengadores y lucha junto a ellos en varias batallas épicas,
+                  demostrando ser un aliado leal y un valiente guerrero en
+                  defensa del universo.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="card text-bg-dark swiper-slide">
+            <div class="card-image">
+              <img src="IMG/starlordcarrusel.webp" id="sl" class="card-img" alt="Star-Lord" />
+              <div class="card-img-overlay">
+                <h5 class="card-title">Star-Lord / Chris Pratt</h5>
+                <p>
+                  Star-Lord es un personaje de Marvel Comics y un miembro de
+                  los Guardianes de la Galaxia. Su verdadero nombre es Peter
+                  Quill, y fue secuestrado de la Tierra cuando era un niño y
+                  criado por un grupo de alienígenas llamados los Saqueadores.
+                  <br />
+                  <br />
+                  En las películas del Universo Cinematográfico de Marvel,
+                  Star-Lord es presentado como un héroe excéntrico y un poco
+                  imprudente, pero con un gran corazón. Es el líder de los
+                  Guardianes de la Galaxia y utiliza su habilidad para pilotar
+                  naves espaciales y su destreza en el combate para proteger
+                  la galaxia de amenazas como Ronan el Acusador y Thanos.
+                  Star-Lord también es conocido por su amor por la música de
+                  los años 80 y su relación con Gamora, otro miembro de los
+                  Guardianes de la Galaxia.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="card text-bg-dark swiper-slide">
+            <div class="card-image">
+              <img src="IMG/mantiscarrusel.webp" id="m" class="card-img" alt="Mantis" />
+              <div class="card-img-overlay">
+                <h5 class="card-title">Mantis / Pom Klementieff</h5>
+                <p>
+                  Mantis es un personaje de Marvel Comics y un miembro de los
+                  Guardianes de la Galaxia. Es una alienígena de la raza Kree
+                  y posee habilidades empáticas y telepáticas.
+                  <br />
+                  <br />
+                  En las películas del Universo Cinematográfico de Marvel,
+                  Mantis es presentada como un personaje amable y un poco
+                  tímido que se une a los Guardianes de la Galaxia en su lucha
+                  contra Thanos. Sus habilidades empáticas son esenciales para
+                  ayudar a los héroes a derrotar a Thanos al final de la
+                  película Avengers: Infinity War. Mantis también tiene una
+                  relación cercana con Drax, otro miembro de los Guardianes de
+                  la Galaxia, y su presencia ayuda a suavizar la imagen dura y
+                  ruda de Drax.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="card text-bg-dark swiper-slide">
+            <div class="card-image">
+              <img src="IMG/vision.webp" id="v" class="card-img" alt="Vision" />
+              <div class="card-img-overlay">
+                <h5 class="card-title">Vision / Paul Bettany</h5>
+                <p>
+                  Vision es un personaje de Marvel Comics que debutó en
+                  Avengers #57 en 1968. Fue creado por Ultron, uno de los
+                  enemigos principales de los Vengadores, y programado para
+                  destruir a los héroes. Sin embargo, Vision se volvió contra
+                  su creador y se convirtió en un héroe en su propio derecho.
+                  <br />
+                  <br />
+                  En las películas del Universo Cinematográfico de Marvel,
+                  Vision es interpretado por Paul Bettany y es presentado como
+                  una inteligencia artificial creada por Tony Stark y Bruce
+                  Banner. Es el compañero y amorío de la Bruja Escarlata, y
+                  sus habilidades incluyen la capacidad de volar, la super
+                  fuerza y la capacidad de disparar rayos láser. Vision se
+                  convierte en un personaje clave en la trama de las películas
+                  Avengers: Age of Ultron y Avengers: Infinity War, y su
+                  destino es incierto al final de esta última película.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="card text-bg-dark swiper-slide">
+            <div class="card-image">
+              <img src="IMG/wongcarrusel.webp" id="w" class="card-img" alt="Wong" />
+              <div class="card-img-overlay">
+                <h5 class="card-title">Wong / Benedict Wong</h5>
+                <p>
+                  Wong es un personaje de Marvel Comics que apareció por
+                  primera vez en Strange Tales #110 en 1963. Es el sirviente y
+                  ayudante del Doctor Strange, un poderoso hechicero y
+                  protector de la Tierra contra amenazas sobrenaturales.
+                  <br />
+                  <br />
+                  En las películas del Universo Cinematográfico de Marvel,
+                  Wong es interpretado por Benedict Wong y es presentado como
+                  el bibliotecario y protector de los artefactos místicos del
+                  Doctor Strange. También es un experto en artes marciales y
+                  ayuda al Doctor Strange en sus misiones contra enemigos como
+                  Kaecilius y Dormammu. Wong es un personaje secundario en las
+                  películas Doctor Strange y Avengers: Infinity War, pero
+                  tiene un papel más destacado en la secuela de Doctor
+                  Strange, titulada Doctor Strange en el Multiverso de la
+                  Locura.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- BOTONES -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECCION SERIES Y PELICULAS -->
+
+  <section id="moviesandseries">
+    <div class="full-img" id="fullImgBox">
+      <img src="IMG/capitanamericaelprimervengador.jfif" id="fullImg" />
+      <span onclick="closeImg()">X</span>
+    </div>
+    <div class="wrapper">
+      <h2 class="text-center">
+        Orden cronológico recomendado para ver series y peliculas de MARVEL
+      </h2>
+      <div class="movies">
+        <img src="IMG/capitanamericaelprimervengador.webp" alt="Capitan América: El primer vengador" class="img-fluid" onclick="openFullImg(this.src)" />
+        <img src="IMG/capitanamarvelportada.webp" alt="Capitana Marvel" class="img-fluid" onclick="openFullImg(this.src)" />
+        <img src="IMG/ironman2008.webp" alt="Iron Man" class="img-fluid" onclick="openFullImg(this.src)" />
+        <img src="IMG/elincreiblehulk2008.webp" alt="El increible hulk" class="img-fluid" onclick="openFullImg(this.src)" />
+        <img src="IMG/ironman2-2010.webp" alt="Iron Man 2 América" class="img-fluid" onclick="openFullImg(this.src)" />
+        <img src="IMG/thor2011.webp" alt="Thor" class="img-fluid" onclick="openFullImg(this.src)" />
+        <img src="IMG/losvengadores2012.webp" alt="Los Vengadores" class="img-fluid" onclick="openFullImg(this.src)" />
+        <img src="IMG/poscredito1.webp" alt="Poscréditos de 'Los Vengadores'" class="img-fluid" onclick="openFullImg(this.src)" />
+        <img src="IMG/ironman3-2013.webp" alt="Iron Man 3" class="img-fluid" onclick="openFullImg(this.src)" />
+        <img src="IMG/thorelmundooscuro2013.webp" alt="Thor: el mundo oscuro" class="img-fluid" onclick="openFullImg(this.src)" />
+        <img src="IMG/capitanamericayelsoldadodelinvierno.webp" alt="Capitan América y el soldado del invierno" class="img-fluid" onclick="openFullImg(this.src)" />
+        <img src="IMG/guardianesdelagalaxia.webp" alt="Guardianes de la Galaxia Vol.1" class="img-fluid" onclick="openFullImg(this.src)" />
+        <img src="IMG/guardianesdelagalaxiavol2.webp" alt="Guardianes de la Galaxia Vol.2" class="img-fluid" onclick="openFullImg(this.src)" />
+        <img src="IMG/yosoygroot.webp" alt="Yo soy Groot" class="img-fluid" onclick="openFullImg(this.src)" />
+        <img src="IMG/vengadoreslaeradeultron2015.webp" alt="Los Vengadores: la era de ultron" class="img-fluid" onclick="openFullImg(this.src)" />
+        <img src="IMG/antman2015.webp" alt="Antman" class="img-fluid" onclick="openFullImg(this.src)" />
+        <img src="IMG/civilwar.webp" alt="Civil War" class="img-fluid" onclick="openFullImg(this.src)" />
+        <img src="IMG/viudanegramovie.webp" alt="Viuda Negra" class="img-fluid" onclick="openFullImg(this.src)" />
+        <img src="IMG/panteranegra1.webp" alt="Pantera Negra" class="img-fluid" onclick="openFullImg(this.src)" />
+        <img src="IMG/doctorstrange1.webp" alt="Doctor Strange" class="img-fluid" onclick="openFullImg(this.src)" />
+        <img src="IMG/spidermanhomecoming.webp" alt="SpiderMan Home Coming" class="img-fluid" onclick="openFullImg(this.src)" />
+        <img src="IMG/antmanylaavispajfif.webp" alt="AntMan y la Avispa" class="img-fluid" onclick="openFullImg(this.src)" />
+        <img src="IMG/thorragnarok.webp" alt="Thor: Ragnarok" class="img-fluid" onclick="openFullImg(this.src)" />
+        <img src="IMG/infinitywar.webp" alt="InfinityWar" class="img-fluid" onclick="openFullImg(this.src)" />
+        <img src="IMG/poscredito2.webp" alt="Poscréditos de 'Antman y la Avispa' y de la 'Capitana Marvel'" class="img-fluid" onclick="openFullImg(this.src)" />
+        <img src="IMG/endgame.webp" alt="EndGame" class="img-fluid" onclick="openFullImg(this.src)" />
+        <img src="IMG/wandavision.webp" alt="WandaVision" class="img-fluid" onclick="openFullImg(this.src)" />
+        <img src="IMG/falconyelsoldadodelinvierno.webp" alt="Falcon y el Soldado del Invierno" class="img-fluid" onclick="openFullImg(this.src)" />
+        <img src="IMG/spidermanfarfromhome.webp" alt="SpiderMan Far from Home" class="img-fluid" onclick="openFullImg(this.src)" />
+        <img src="IMG/loki.webp" alt="Loki" class="img-fluid" onclick="openFullImg(this.src)" />
+        <img src="IMG/spidermannowayhome.webp" alt="SpiderMan No Way Home" class="img-fluid" onclick="openFullImg(this.src)" />
+        <img src="IMG/eternals.webp" alt="Eternals" class="img-fluid" onclick="openFullImg(this.src)" />
+        <img src="IMG/shangchi.webp" alt="Shangchi" class="img-fluid" onclick="openFullImg(this.src)" />
+        <img src="IMG/hawkeyeserie.webp" alt="Hawkeye" class="img-fluid" onclick="openFullImg(this.src)" />
+        <img src="IMG/doctorstrange2.webp" alt="Doctor Strange" class="img-fluid" onclick="openFullImg(this.src)" />
+        <img src="IMG/moonknight.webp" alt="Moon Knight" class="img-fluid" onclick="openFullImg(this.src)" />
+        <img src="IMG/msmarvel.webp" alt="Ms Marvel" class="img-fluid" onclick="openFullImg(this.src)" />
+        <img src="IMG/thorloveandthunder.webp" alt="Thor: Love and Thunder" class="img-fluid" onclick="openFullImg(this.src)" />
+        <img src="IMG/shehulk.webp" alt="She Hulk" class="img-fluid" onclick="openFullImg(this.src)" />
+        <img src="IMG/werewolf.webp" alt="WereWolf" class="img-fluid" onclick="openFullImg(this.src)" />
+        <img src="IMG/wakandaforever.webp" alt="Wakanda Forever" class="img-fluid" onclick="openFullImg(this.src)" />
+        <img src="IMG/antmanquantumania.webp" alt="Antman y la Avispa Quantumania " class="img-fluid" onclick="openFullImg(this.src)" />
+        <img src="IMG/guardianesdelagalaxiavol3.webp" alt="Guardianes de la Galaxia Vol.3" class="img-fluid" onclick="openFullImg(this.src)" />
+        <img src="IMG/invasionsecreta.webp" alt="Invasion Secreta" class="img-fluid" onclick="openFullImg(this.src)" />
+      </div>
+    </div>
+  </section>
+
+  <!-- SECCION PROXIMOS ESTRENOS Y PLATAFORMAS DONDE SE PUEDEN VER -->
+
+  <section id="anunciosyplataformas">
+    <div class="wrapper-all">
+      <!-- PROXIMOS ESTRENOS TABLA  -->
+      <h2 class="text-center">Próximos estrenos</h2>
+      <div class="container">
+        <table class="table table-bordered border-dark">
+          <thead>
+            <tr>
+              <td class="text-center" id="fases" colspan="4">FASE 5</td>
+            </tr>
+            <tr>
+              <th scope="col">NOMBRE</th>
+              <th scope="col">FORMATO</th>
+              <th scope="col">FECHA DE ESTRENO</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">What if? 2</th>
+              <td>Película</td>
+              <td>Principios de 2023</td>
+            </tr>
+            <tr>
+              <th scope="row">Echo</th>
+              <td>Serie TV</td>
+              <td>Verano de 2023</td>
+            </tr>
+            <tr>
+              <th scope="row">Loki 2</th>
+              <td>Serie TV</td>
+              <td>Verano de 2023</td>
+            </tr>
+            <tr>
+              <th scope="row">Ironheart</th>
+              <td>Serie TV</td>
+              <td>Otoño de 2023</td>
+            </tr>
+            <tr>
+              <th scope="row">The Marvels</th>
+              <td>Película</td>
+              <td>10 de noviembre de 2023</td>
+            </tr>
+            <tr>
+              <th scope="row">Agatha: aquelarre del caos</th>
+              <td>Serie TV</td>
+              <td>Invierno de 2023</td>
+            </tr>
+            <tr>
+              <th scope="row">Captain America: New World Order</th>
+              <td>Película</td>
+              <td>26 de julio de 2024</td>
+            </tr>
+            <tr>
+              <th scope="row">Thunderbolts</th>
+              <td>Película</td>
+              <td>20 de diciembre de 2024</td>
+            </tr>
+            <tr>
+              <th scope="row">Blade</th>
+              <td>Película</td>
+              <td>14 de febrero de 2025</td>
+            </tr>
+            <tr>
+              <th scope="row">Daredevil: Born Again</th>
+              <td>Serie TV</td>
+              <td>Primavera de 2024</td>
+            </tr>
+            <tr>
+              <th scope="row">Los 4 Fantásticos</th>
+              <td>Película</td>
+              <td>2 de mayo de 2025</td>
+            </tr>
+            <tr>
+              <td class="text-center" id="fases" colspan="4">FASE 6</td>
+            </tr>
+            <tr>
+              <th scope="row">Deadpool 3</th>
+              <td>Película</td>
+              <td>Por anunciar</td>
+            </tr>
+            <tr>
+              <th scope="row">Los 4 Fantásticos</th>
+              <td>Película</td>
+              <td>2 de mayo de 2025</td>
+            </tr>
+            <tr>
+              <th scope="row">Marvel Zombies</th>
+              <td>Serie TV</td>
+              <td>Por anunciar</td>
+            </tr>
+            <tr>
+              <th scope="row">Vengadores: The Kang Dynasty</th>
+              <td>Película</td>
+              <td>1 de mayo de 2026</td>
+            </tr>
+            <tr>
+              <th scope="row">Vengadores: Secret Wars</th>
+              <td>Película</td>
+              <td>7 de mayo de 2027</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <!-- PLATAFORMAS DONDE SE ENCUENTRAN LAS PELICULAS  -->
+      <h5 class="text-center">Plataformas donde ver películas del UCM.</h5>
+      <div class="plataformas">
+        <a href="https://ver.movistarplus.es/" target="_blank"><img src="IMG/movistar+.webp" alt="Movistar+" /></a>
+        <a href="https://www.disneyplus.com/" target="_blank"><img src="IMG/disney+.webp" alt="Disney+" /></a>
+        <a href="https://www.hbomax.com/" target="_blank"><img src="IMG/hbomax.webp" alt="HBO Max" /></a>
+        <a href="https://www.primevideo.com/" target="_blank"><img src="IMG/primevideo.webp"
+            alt="Amazon Prime Video" /></a>
+        <a href="https://www.netflix.com/" target="_blank"><img src="IMG/netflix.webp" alt="Netflix" /></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+
+  <footer>
+    <div class="footer">
+        <div class="wrapper-footer">
+          <div class="logo">
+          <a href="#"><img class="logofooter" src="IMG/logo.webp" alt="Logo" /></a>
+          <p class="text-center copyright">© Mayra Denot 2023</p>
+          </div>
+          <div class="contenedor-redes">
+            <ul>
+              <li class="instagram"><a href="https://www.instagram.com/maydenot/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+              <li class="twitter"><a href="https://twitter.com/mayradenot" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
+              <li class="github"><a href="https://github.com/MayDenot" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+              <li class="facebook"><a href="https://www.facebook.com/mayra.denot.5/" target="_blank"><i class="fa-brands fa-square-facebook"></i></a></li>
+            </ul>
+          </div>
+          <div class="avisos">  
+            <ul>
+              <li><p>Aviso Legal</p></li>
+              <li><p>Política de Privacidad</p></li>
+              <li><p>Términos</p></li>
+              <li><p>Configuración de Cookies</p></li>
+            </ul>
+          </div> 
+        </div>
+    </div>
+  </footer> 
+
+  <!-- JAVASCRIPT -->
+  <script src="index.js" defer></script>
+  <!-- SWIPERJS-->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9.1.0/swiper-bundle.min.js"></script>
+  <!-- BOOTSTRAP-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

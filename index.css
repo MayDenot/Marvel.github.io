@@ -1,0 +1,575 @@
+
+:root {
+    --swiper-theme-color: #fff !important
+}
+
+/* ESTILOS GENERALES */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+section {
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+body {
+    scroll-behavior: smooth;
+}
+
+p::selection {
+    background-color: #000000;
+}
+
+h2::selection {
+    background-color: #000000;
+}
+
+h5::selection {
+    background-color: #000000;
+}
+
+a::selection {
+    background-color: #000000;
+}
+
+img::selection {
+    background-color: #000000;
+}
+
+table th::selection {
+    background-color: #000000;
+}
+
+table td::selection {
+    background-color: #000000;
+}
+
+/* HEADER */
+
+header {
+    position: fixed;
+    z-index: 10;
+}
+
+nav {
+    width: 100vw;
+    height: 70px;
+    text-transform: uppercase;
+    background-color: #ed1d24;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #fff;
+}
+
+header nav a img {
+    width: 200px;
+    height: 70px;
+}
+
+header nav ul li:hover {
+    border-bottom: 2px solid #fff;
+}
+
+.navbar-toggler {
+    margin-right: 20px;
+    border: none !important;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none !important;
+}
+
+/* SECCION HOME */
+
+#galeria .container2 {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    padding: 0 !important;
+}
+
+.container2 .personajes {
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .9;
+    transition: .5s ease;
+}
+
+.container2 .personajes:hover {
+    cursor: pointer;
+    width: 350px;
+    opacity: 1;
+    filter: contrast(100%);
+}
+
+.container2 .personajes2 {
+    display: none;
+}
+
+/* SECCION SOBRE MARVEL*/
+
+#sobreMARVEL {
+    background-color: #ed1d24;
+    display: flex;
+}
+
+#sobreMARVEL .container {
+    display: flex;
+    align-items: center;
+}
+
+#sobreMARVEL .img-fluid {
+    border: 15px double #191818;
+}
+
+#sobreMARVEL .texto {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* SECCION PERSONAJES*/
+
+#personajes {
+    background-color: #ed1d24;
+}
+
+.center {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slide-container{
+    width: 100%;
+}
+
+.card {
+    width: 450px;
+    display: flex;
+    border: none;
+}
+
+.card-image .card-img {
+    width: 100%;
+    display: flex;
+    border: none;
+    object-fit: cover;
+}
+
+.card  #ca, #be, #vn, #cm, #ds, #im, #am, #nf, #n, #f, #d, #bb, #h, #gr, #g, #H, #pn, #o,
+#sm, #t, #sl, #w, #v, #m {
+    height: 400px;
+    object-fit: cover;
+}
+
+.card p {
+    display: none;
+}
+
+.card:hover p {
+    display: block;
+    color: #fff;
+    transition: .6s ease;
+}
+
+.card:hover img {
+    opacity: .4;
+    transition: .6s ease;
+}
+
+.swiper-pagination {
+    position: static !important;
+}
+
+/* PELICULAS Y SERIES */
+
+#moviesandseries {
+    background-color: #ed1d24;
+    height: 100%;
+}
+
+#moviesandseries .wrapper {
+    padding-top: 100px;
+}
+
+#moviesandseries h2 {
+    padding-bottom: 10px;
+    color: #fff;
+}
+
+.movies {
+    width: 80%;
+    margin: 50px auto 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    gap: 30px;
+}
+
+.movies img {
+    width: 100%;
+    cursor: pointer;
+    transition: 1s;
+    border-radius: 4px;
+}
+
+.movies img:hover {
+    transform: scale(1.2);
+    box-shadow: 0 0 15px #000000;
+}
+
+#moviesandseries .full-img {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.9);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 99;
+}
+.full-img span {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    font-size: 30px;
+    color: #fff;
+    cursor: pointer;
+}
+
+#moviesandseries .full-img img {
+    width: 90%;
+    max-width: 600px;
+}
+
+/* SECCION PROXIMOS ESTRENOS Y PLATAFORMAS DONDE SE PUEDEN VER */
+
+#anunciosyplataformas {
+    background-color: #ed1d24;
+    color: #fff;
+    height: 100%;
+}
+
+#anunciosyplataformas .wrapper-all {
+    padding-top: 90px;
+}
+
+.wrapper-all h2 {
+    padding-bottom: 20px;
+}
+
+#anunciosyplataformas .wrapper-all table {
+    box-shadow: 0 0 15px #000000;
+}
+
+#anunciosyplataformas thead, tbody {
+    color: #fff;
+    background-color: #494949;
+}
+
+#anunciosyplataformas #fases {
+    background-color: #292929;
+}
+
+#anunciosyplataformas tr:hover {
+    background-color: #393939;
+}
+
+.wrapper-all h5 {
+    padding-top: 50px;
+}
+
+#anunciosyplataformas .plataformas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    padding: 50px 0;
+}
+
+.plataformas a {
+    cursor: pointer;
+}
+
+.plataformas a img {
+    width: 100px;
+    border-radius: 5%;
+    transition: all .3s ease-in-out;
+}
+
+.plataformas a img:hover {
+    scale: 1.1;
+}
+
+/* FOOTER */
+
+.footer {
+    background-color: #D40E17;
+    width: 100%;
+    height: 50vh;
+}
+
+.footer .wrapper-footer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer .wrapper-footer .logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 50px;
+}
+
+.footer .wrapper-footer .logo .logofooter, .copyright {
+    width: 200px;
+    padding-top: 15px;
+    color: #fff;
+}
+
+.footer .contenedor-redes {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer .contenedor-redes ul {
+    display: flex;
+    gap: 32px;
+    margin: 0;
+    padding: 0;
+}
+
+.footer .contenedor-redes ul li {
+    list-style: none;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+    font-size: 30px;
+    margin-right: 10px;
+    transition: all .3s ease-in-out;
+}
+
+.footer .contenedor-redes ul li a {
+    color: #fff;
+}
+
+.contenedor-redes ul li:hover {
+    scale: 1.2;
+
+}
+
+.footer .avisos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 300px;
+    padding-right: 50px;
+}
+
+.footer .avisos li {
+    list-style: none;
+}
+
+.footer .avisos li p {
+    color: #fff;
+}  
+
+/* BREAKPOINTS */
+
+/* MOVIL S */
+@media screen and (max-width: 365px) {
+
+    .card  #ca, #be, #vn, #cm, #ds, #im, #am, #nf, #n, #f, #d, #bb, #h, #gr, #g, #H, #pn, #o,
+    #sm, #t, #sl, #w, #v, #m { /* TMÑ DE LAS CARDS */
+    height: 550px;
+    object-fit: cover;
+    }
+
+    .card-img-overlay p { /* PÁRRAFO DE LAS CARDS */
+        font-size: 12px !important;
+    }
+
+}
+
+@media screen and (max-width: 415px) {
+
+    #sobreMARVEL .texto {
+        font-size: 13px;
+    }
+    
+    .plataformas a img { /* TMÑ DE LAS PLATAFORMAS */
+        width: 50px;
+    }
+}
+
+/* MOVIL L */
+@media screen and (max-width: 576px) {
+
+
+    .card-img-overlay p { /* PÁRRAFO DE LAS CARDS*/
+        font-size: 14px;
+    }
+
+
+    .container2 .personajes:hover { /* TMÑ DE LA IMG EN LA GALERIA */
+        width: 250px;
+        opacity: 1;
+        filter: contrast(100%);
+    }
+
+    .plataformas a img { /* TMÑ DE LAS PLATAFORMAS */
+        width: 40px;
+    } 
+
+    .contenedor-redes {
+        padding: 15px 0;
+    }
+
+}
+
+/* TABLET */
+@media screen and (max-width: 768px) {
+
+    .card-img-overlay p { /* PÁRRAFO DE LAS CARDS*/
+        font-size: 12px;
+    }
+
+    #sobreMARVEL img {
+        width: 70%;
+    }
+
+    #sobreMARVEL .container {
+        text-align: center;
+    }
+
+    .plataformas a img { /* TMÑ DE LAS PLATAFORMAS */
+        width: 50px;
+    } 
+
+}
+
+/* TABLET L */
+@media screen and (max-width: 992px) {
+
+    .card-img-overlay p { /* PÁRRAFO DE LAS CARDS*/
+        font-size: 13px;
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev { /* BTN TIPO FLECHA DEL CARRUSEL */
+        display: none !important;
+    }
+
+    header nav a img {  /* TMÑ DEL LOGO DE MARVEL*/
+        width: 150px;
+        height: 50px;
+    }
+
+    .navbar-collapse {  /* COLOR DEL NAV */
+        background-color: #ed1d24;
+        text-align: center;
+    }
+
+    .navbar-collapse ul li:hover {  /* EFECTO HOVER DEL NAV */
+        border-bottom: 0;
+        background-color: #ff1f29;
+    }
+
+    #sobreMARVEL .texto { 
+        padding-left: 20px;
+    }
+
+    #sobreMARVEL .container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    #sobreMARVEL .texto {
+        padding-top: 20px;
+        width: 100%;
+    }
+
+    .footer .wrapper-footer { /* RESPONSIVE FOOTER */
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer .logo {
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    .footer .avisos {
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    .footer .avisos ul {
+        margin: 0;
+        padding: 0;
+    }
+
+    .footer .avisos li p {
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+
+}
+
+/* LAPTOP */
+@media screen and (max-width: 1200px) {
+
+    .card-img-overlay p { /* PÁRRAFO DE LAS CARDS*/
+        font-size: 17px;
+    }
+
+}
+
+/* DESKTOP */
+@media screen and (max-width: 1400px) {
+
+    .card-img-overlay p { /* PÁRRAFO DE LAS CARDS*/
+        font-size: 13.5px;
+    }
+
+    .card  #ca, #be, #vn, #cm, #ds, #im, #am, #nf, #n, #f, #d, #bb, #h, #gr, #g, #H, #pn, #o,
+    #sm, #t, #sl, #w, #v, #m {  /* TMÑ DE LAS CARDS */
+    height: 450px;
+    object-fit: cover;
+    }
+}
+
+/* DESKTOP L */
+@media screen and (min-width: 1401px) {
+
+    .card-img-overlay p { /* PÁRRAFO DE LAS CARDS*/
+        font-size: 15.5px;
+    }
+
+}
+
+
+
+
+
+
