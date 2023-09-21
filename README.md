@@ -3,12 +3,6 @@
 
 Es una web con fines educativos, un proyecto a modo de práctica y el cual elegí ya que soy fan del UCM (Universo Cinematográfico de Marvel).
 
-![Logo](https://maydenot.github.io/Marvel.github.io/IMG/logo.png)
-
-
-
-
-
 ## Color Reference 🎨
 
 | Color             | Hex                                                                |
@@ -20,7 +14,7 @@ Es una web con fines educativos, un proyecto a modo de práctica y el cual eleg�
 
 
 ## 🔗 Links
-[![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://maydenot.github.io/MyPortafolio.github.io/)
+[![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://maydenot.vercel.app)
 [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/mayra-denot-dev/)
 
 
